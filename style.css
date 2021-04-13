@@ -50,7 +50,7 @@ li{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #070B34;
+    background-color: #021524;
     z-index: 1;
 }
 
@@ -59,6 +59,7 @@ li{
     right: 5%;
     bottom: 0;
     width: 55rem;
+    z-index: -1;
 }
 
 @media only screen and (max-width: 996px) {
@@ -108,7 +109,7 @@ li{
 
 .logo h1 span{
     font-weight: bold;
-    color: #855988;
+    color: #068B49;
 }
 
 .nav-list{
@@ -126,7 +127,29 @@ li{
     transition: all 300ms ease-in-out;
 }
 
+.nav-link{
+    cursor: pointer;
+}
+
 .nav-link:hover{
     border-radius: 0.3rem;
-    background-color: #855988;
+    background-color: #068B49;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    .menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100%;
+        max-width: 40rem;
+        background-color: #fff;
+        transition: all 500ms ease-in-out;
+        z-index: 100;
+    }
 }
