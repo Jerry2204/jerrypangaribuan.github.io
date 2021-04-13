@@ -50,4 +50,19 @@ li{
     position: relative;
     width: 100%;
     height: 100vh;
+    background-color: #000;
+    z-index: 1;
+}
+
+.header img {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    width: 55rem;
+}
+
+@media only screen and (max-width: 996px) {
+    .header{
+        min-height: 60vh;
+    }
 }
