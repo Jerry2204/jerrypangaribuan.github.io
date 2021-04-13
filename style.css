@@ -50,7 +50,7 @@ li{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #000;
+    background-color: #070B34;
     z-index: 1;
 }
 
@@ -65,4 +65,48 @@ li{
     .header{
         min-height: 60vh;
     }
+
+    .header img{
+        width: 50rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .header img{
+        width: 40rem;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .header{
+        min-height: 60vh;
+    }
+
+    .header img{
+        width: 30rem;
+    }
+}
+
+.nav{
+    padding: 1.6rem 0;
+    color: #fff;
+}
+
+.top-nav{
+    display: none;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.logo h1 span{
+    font-weight: bold;
+    color: #855988;
 }
