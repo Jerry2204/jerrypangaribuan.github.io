@@ -684,3 +684,18 @@ a.btn:active{
         font-size: 1.5rem;
     }
 }
+
+/* Footer */
+footer{
+    background-color: #021524;
+    padding: 1.6rem 1rem;
+    text-align: center;
+}
+
+footer p{
+    color: #fff;
+}
+
+footer p span{
+    color: #068B49;
+}
