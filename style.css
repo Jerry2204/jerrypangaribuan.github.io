@@ -611,3 +611,76 @@ a.btn:active{
 .testimonial:hover .img-cover{
     border: 4px solid #021524;
 }
+
+/* Contact */
+.contact-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.left h2 {
+    font-size: 2rem;
+}
+
+.left p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.left div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.left div .content{
+    text-align: left;
+}
+
+.left .icon{
+    margin-right: 2rem;
+    font-size: 2.3rem;
+    color: #068B49;
+}
+
+.form h2{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.form input, .form textarea{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    text-indent: 1rem;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    outline: none;
+}
+
+.form textarea{
+    max-width: 55.5rem;
+    height: 16rem;
+    margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 768px){
+    .contact-center{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-center .left{
+        text-align: left;
+    }
+
+    .left div .content h3{
+        font-size: 1.6rem;
+    }
+
+    .left div .content span{
+        font-size: 1.5rem;
+    }
+}
