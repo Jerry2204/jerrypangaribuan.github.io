@@ -20,7 +20,26 @@ navClose.addEventListener("click", () => {
     }
 });
 
+const navHeight = navBar.getBoundingClientRect().height;
+window.addEventListener('scroll', () => {
+    const scrollHeight = window.pageYOffset;
+    if (scrollHeight > navHeight) {
+        navBar.classList.add('fix-nav');
+    }else{
+        navBar.classList.remove('fix-nav');
+    }
+})
+
 new TypeIt('#type1', {
+    speed: 120,
+    loop: true,
+    waitUntilVisible: true,
+}).type("Designer", { delay: 400 })
+.pause(500).delete(9).type("Web Developer", { delay: 400 })
+.pause(500).delete(14).type("Mobile Developer", { delay: 400 })
+.pause(500).delete(17).go();
+
+new TypeIt('#type2', {
     speed: 120,
     loop: true,
     waitUntilVisible: true,
