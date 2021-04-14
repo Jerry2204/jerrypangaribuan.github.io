@@ -296,5 +296,25 @@ li{
     position: absolute;
     bottom: 5%;
     left: 10%;
+}
+
+.icons a:not(:last-child){
+    margin-right: 2rem;
+}
+
+.icons a{
+    font-size: 3rem;
+    cursor: pointer;
     color: #fff;
+    transition: all 300ms ease-in-out;
+}
+
+.icons a:hover{
+    color: #068B49;
+}
+
+@media only screen and (max-width: 567px) {
+    .icons{
+        display: none;
+    }
 }
