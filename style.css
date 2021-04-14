@@ -402,6 +402,8 @@ a.btn{
 
 a.btn:hover{
     transform: translateY(-3px);
+    background-color: transparent;
+    color: #000;
 }
 
 a.btn:active{
@@ -441,4 +443,53 @@ a.btn:active{
         height: 40rem;
         max-width: 90%;
     }
+}
+
+/* Services */
+
+.theme{
+    background-color: #021524;
+}
+
+.theme .title{
+    color: #fff;
+}
+
+.services-center{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+}
+
+.service{
+    color: #fff;
+    background-color: #052b36;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    transition: all 300ms ease-in-out;
+}
+
+.service span{
+    color: #068B49;
+    font-size: 4rem;
+    transition: all 300ms ease-in-out;
+}
+
+.service h2{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.service p{
+    font-size: 1.4rem;
+    color: #f1f1f1;
+}
+
+.service:hover{
+    background-color: #068B49;
+}
+
+.service:hover span{
+    color: #fff;
 }
