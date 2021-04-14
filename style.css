@@ -7,6 +7,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -16,7 +17,7 @@ body{
     background-color: #fff;
     color: #000;
     position: relative;
-    z-index: 0;
+    z-index: 1;
 }
 
 h1, h2, h3, h4{
@@ -80,11 +81,11 @@ li{
 
 @media only screen and (max-width: 567px) {
     .header{
-        min-height: 60vh;
+        min-height: 100vh;
     }
 
     .header img{
-        width: 30rem;
+        width: 35rem;
     }
 }
 
@@ -199,7 +200,7 @@ li{
     }
 
     body.show::before{
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -237,4 +238,63 @@ li{
 .hero h4 span{
     color: #068B49;
     text-decoration: underline;
+}
+
+.hero a:link,
+.hero a:visited{
+    display: inline-block;
+    padding: 0.8rem 2.5rem;
+    border: 1px solid #068B49;
+    background-color: #068B49;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.hero a:hover{
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 996px){
+    .hero{
+        transform: translate(10%, -50%);
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .hero h1{
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 567px){
+    .hero{
+        top: 35%;
+        transform: translate(10%, -50%);
+    }
+ 
+    .hero h3{
+        font-size: 1.6rem;
+    }
+
+    .hero h1{
+        font-size: 2.5rem;
+    }
+
+    .hero h4{
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 378px){
+    .hero h1{
+        font-size: 2rem;
+    }
+}
+
+.icons {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    color: #fff;
 }
