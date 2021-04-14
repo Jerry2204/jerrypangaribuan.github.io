@@ -493,3 +493,74 @@ a.btn:active{
 .service:hover span{
     color: #fff;
 }
+
+/* Skills */
+.skills-box:not(:last-child){
+    margin-bottom: 2rem;
+}
+
+.skills-box h4{
+    font-size: 1.8rem;
+    color: #888;
+    font-weight: 500;
+}
+
+.skills-box .skills-ilt{
+    width: 100%;
+    position: relative;
+    height: 0.4rem;
+    background-color: #ccc;
+    border-radius: .5rem;
+}
+
+.skills-box .skills-bar{
+    background-color: #068B49;
+    height: 0.4rem;
+}
+
+.skills-box .html{
+    width: 95%;
+}
+
+.skills-box .css{
+    width: 70%;
+}
+
+.skills-box .javascript{
+    width: 80%;
+}
+
+.skills-box .java{
+    width: 75%;
+}
+
+.skills-box .cpp{
+    width: 75%;
+}
+
+.skills-box span{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    font-size: 1.4rem;
+}
+
+.skills-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+}
+
+.right h3{
+    margin-bottom: 1rem;
+}
+
+.right p{
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .skills-center{
+        grid-template-columns: 1fr;
+    }
+}
