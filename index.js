@@ -101,4 +101,6 @@ new Glide(glide, {
             perView: 1
         },
     }  
-}).mount()
+}).mount();
+
+AOS.init();
