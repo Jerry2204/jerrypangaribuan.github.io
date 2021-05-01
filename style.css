@@ -455,6 +455,7 @@ a.btn:active{
 
 .theme{
     background-color: #021524;
+    color: #fff;
 }
 
 .theme .title{
@@ -616,6 +617,106 @@ a.btn:active{
 
 .testimonial:hover .img-cover{
     border: 4px solid #021524;
+}
+
+/* My Projects */
+
+.external-container {
+    display: grid;
+    place-items: center center;
+    box-sizing: border-box;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 20px;
+    grid-gap: 40px;
+}
+
+.card{
+    background-color: #052b36;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+
+.container-card{
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.container-card img{
+    width: 100%;
+    height: 270px;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+.container-card:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.5;
+}
+
+/* .card-one>.container-card:after{
+    background-image: linear-gradient(
+        135deg, 
+        #0100ec,
+        #fb36f4
+    );
+} */
+
+.details{
+    padding: 20px 10px;
+}
+
+.details>h3{
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+
+.details>p{
+    color: #d3dae3;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+a.btn-detail{
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    background-color: #068B49;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #068B49;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 300ms ease-in-out;
+}
+
+a.btn-detail:hover{
+    transform: translateY(-3px);
+    background-color: transparent;
+    color: #fff;
+}
+
+a.btn-detail:active{
+    transform: translateY(0);
+}
+
+@media only screen and (max-width: 996px){
+    a.btn{
+        padding: 0.7rem 1.8rem;
+    }
 }
 
 /* Contact */
