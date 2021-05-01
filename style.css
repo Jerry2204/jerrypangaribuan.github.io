@@ -373,6 +373,12 @@ li{
     height: 40rem;
     max-width: 35rem;
     object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s all ease-in-out;
+}
+
+.left img:hover{
+   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
 }
 
 .right h1{
