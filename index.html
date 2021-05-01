@@ -28,6 +28,13 @@
 </head>
 
 <body class="">
+    <!-- Loader -->
+    <div class="loader_bg">
+        <div class="loader">
+
+        </div>
+    </div>
+
     <!-- Start of Header -->
     <header class="header" id="home">
         <!-- Start Navigation -->
@@ -404,6 +411,15 @@
     <footer>
         <p>Created By <span>Jerry A Pangaribuan</span> | &copy; <script>document.write(new Date().getFullYear())</script> All rights reserved</p>
     </footer>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1000)
+    </script>
 
     <!-- AOS JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
